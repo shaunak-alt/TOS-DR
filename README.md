@@ -34,7 +34,7 @@ TOS;DR provides a clean and simple interface to demystify complex legal jargon.
 
 -   **AI Model:** Google Gemini 1.5 Flash
 -   **Frontend:** HTML, Tailwind CSS, Vanilla JavaScript
--   **Backend (Original):** Angular/TypeScript
+-   **Backend:** Python, Flask
 
 ---
 
