@@ -52,8 +52,8 @@ This project is designed to run directly in the browser from a single HTML file.
 1.  **Download the Code:**
     Clone this repository or download the `index.html` file.
     ```bash
-    git clone <your-repository-url>
-    cd <repository-folder>
+    git clone https://github.com/shaunak-alt/TOS-DR
+    cd TOS-DR
     ```
 
 2.  **Add Your API Key:**
