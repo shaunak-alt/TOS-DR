@@ -56,14 +56,40 @@ This project is designed to run directly in the browser from a single HTML file.
     cd TOS-DR
     ```
 
-2.  **Add Your API Key:**
-    Open the `index.html` file in a text editor. Find the following section in the `<script>` tag at the bottom of the file:
-    ```javascript
-    // --- PASTE YOUR API KEY HERE ---
-    const API_KEY = "YOUR_GEMINI_API_KEY_HERE";
-    // -----------------------------
-    ```
-    Replace `"YOUR_GEMINI_API_KEY_HERE"` with your actual Gemini API key. **Do not commit this file to a public repository with your key in it.**
+2. **Set Up the Backend**
+    The backend server powers the AI analysis and chat.
 
-3.  **Run the Application:**
-    Simply open the modified `index.html` file in your web browser (e.g., Chrome, Firefox, Edge).
+    ```bash
+
+    # Navigate to the backend directory
+    cd backend
+    
+    # (Recommended) Create and activate a virtual environment
+    python -m venv venv
+    # On Windows
+    venv\Scripts\activate
+    # On macOS/Linux
+    source venv/bin/activate
+    
+    # Install the required Python packages
+    pip install -r requirements.txt
+    
+    # Create your environment file for the API Key
+    # In the `backend` directory, create a new file named exactly .env
+    # Open the .env file and add your Gemini API key like this:
+    GEMINI_API_KEY="YOUR_GEMINI_API_KEY_HERE"
+    ```
+    
+3. **Run the Application**
+    You need to have the backend server running for the frontend to work.
+
+    1. Start the Backend Server:
+        In your terminal, from the backend directory, run:
+    
+        ```bash
+        flask run
+        ```
+        The server will start on http://127.0.0.1:5000. Keep this terminal window open.
+
+    2. Launch the Frontend:
+        Navigate to the frontend directory and open the index.html file in your web browser.
